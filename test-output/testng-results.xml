@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="13" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="ZigwheelsRegression" duration-ms="119428" started-at="2020-07-29T17:12:16 IST" finished-at="2020-07-29T17:14:15 IST">
+    <groups>
+      <group name="Regression">
+        <method signature="ZigWheelsValidTest.Login()[pri:1, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="Login" class="com.zigwheels.test.ZigWheelsValidTest"/>
+        <method signature="ZigWheelsValidTest.LoginPage(java.lang.String)[pri:2, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="LoginPage" class="com.zigwheels.test.ZigWheelsValidTest"/>
+        <method signature="ZigWheelsValidTest.assertReEnterPass()[pri:3, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="assertReEnterPass" class="com.zigwheels.test.ZigWheelsValidTest"/>
+        <method signature="ZigWheelsValidTest.getWebsite()[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="getWebsite" class="com.zigwheels.test.ZigWheelsValidTest"/>
+        <method signature="ZigwheelsTest.LoginPage(java.lang.String)[pri:7, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="LoginPage" class="com.zigwheels.test.ZigwheelsTest"/>
+        <method signature="ZigwheelsTest.assertBug()[pri:8, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="assertBug" class="com.zigwheels.test.ZigwheelsTest"/>
+        <method signature="ZigwheelsTest.assertCars()[pri:5, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="assertCars" class="com.zigwheels.test.ZigwheelsTest"/>
+        <method signature="ZigwheelsTest.getWebsite()[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getWebsite" class="com.zigwheels.test.ZigwheelsTest"/>
+        <method signature="ZigwheelsTest.switchLogin()[pri:6, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="switchLogin" class="com.zigwheels.test.ZigwheelsTest"/>
+        <method signature="ZigwheelsTest.usedCars()[pri:4, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="usedCars" class="com.zigwheels.test.ZigwheelsTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="ZigwheelsTest.getWebsite()[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getWebsite" class="com.zigwheels.test.ZigwheelsTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Regression TestFirefox" duration-ms="119428" started-at="2020-07-29T17:12:16 IST" finished-at="2020-07-29T17:14:15 IST">
+      <class name="com.zigwheels.test.ZigwheelsTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="setUp" is-config="true" duration-ms="7316" started-at="2020-07-29T17:12:16 IST" finished-at="2020-07-29T17:12:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://192.168.1.4:6970/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getWebsite()[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getWebsite" duration-ms="10092" started-at="2020-07-29T17:12:23 IST" finished-at="2020-07-29T17:12:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWebsite -->
+        <test-method status="PASS" signature="usedCars()[pri:4, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="usedCars" duration-ms="6957" started-at="2020-07-29T17:12:33 IST" finished-at="2020-07-29T17:12:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usedCars -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:12:33 IST" finished-at="2020-07-29T17:12:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getWebsite status=SUCCESS method=ZigwheelsTest.getWebsite()[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:12:40 IST" finished-at="2020-07-29T17:12:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=usedCars status=SUCCESS method=ZigwheelsTest.usedCars()[pri:4, instance:com.zigwheels.test.ZigwheelsTest@45d84a20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="assertCars()[pri:5, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="assertCars" duration-ms="47" started-at="2020-07-29T17:12:40 IST" finished-at="2020-07-29T17:12:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertCars -->
+        <test-method status="PASS" signature="switchLogin()[pri:6, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="switchLogin" duration-ms="4198" started-at="2020-07-29T17:12:41 IST" finished-at="2020-07-29T17:12:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchLogin -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:12:41 IST" finished-at="2020-07-29T17:12:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assertCars status=SUCCESS method=ZigwheelsTest.assertCars()[pri:5, instance:com.zigwheels.test.ZigwheelsTest@45d84a20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:12:45 IST" finished-at="2020-07-29T17:12:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=switchLogin status=SUCCESS method=ZigwheelsTest.switchLogin()[pri:6, instance:com.zigwheels.test.ZigwheelsTest@45d84a20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="LoginPage(java.lang.String)[pri:7, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="LoginPage" duration-ms="5926" started-at="2020-07-29T17:12:45 IST" finished-at="2020-07-29T17:12:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[readExcel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method status="PASS" signature="assertBug()[pri:8, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="assertBug" duration-ms="29331" started-at="2020-07-29T17:12:51 IST" finished-at="2020-07-29T17:13:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertBug -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:12:51 IST" finished-at="2020-07-29T17:12:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginPage status=SUCCESS method=ZigwheelsTest.LoginPage(java.lang.String)[pri:7, instance:com.zigwheels.test.ZigwheelsTest@45d84a20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:13:20 IST" finished-at="2020-07-29T17:13:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assertBug status=SUCCESS method=ZigwheelsTest.assertBug()[pri:8, instance:com.zigwheels.test.ZigwheelsTest@45d84a20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zigwheels.test.ZigwheelsTest@45d84a20]" name="tearDown" is-config="true" duration-ms="2821" started-at="2020-07-29T17:13:20 IST" finished-at="2020-07-29T17:13:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zigwheels.test.ZigwheelsTest -->
+      <class name="com.zigwheels.test.ZigWheelsValidTest">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="setUp" is-config="true" duration-ms="6231" started-at="2020-07-29T17:13:23 IST" finished-at="2020-07-29T17:13:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://192.168.1.4:6970/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getWebsite()[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="getWebsite" duration-ms="9533" started-at="2020-07-29T17:13:29 IST" finished-at="2020-07-29T17:13:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWebsite -->
+        <test-method status="PASS" signature="Login()[pri:1, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="Login" duration-ms="5105" started-at="2020-07-29T17:13:39 IST" finished-at="2020-07-29T17:13:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:13:39 IST" finished-at="2020-07-29T17:13:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getWebsite status=SUCCESS method=ZigWheelsValidTest.getWebsite()[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:13:44 IST" finished-at="2020-07-29T17:13:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=ZigWheelsValidTest.Login()[pri:1, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="LoginPage(java.lang.String)[pri:2, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="LoginPage" duration-ms="5831" started-at="2020-07-29T17:13:44 IST" finished-at="2020-07-29T17:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[readExcel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method status="PASS" signature="assertReEnterPass()[pri:3, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="assertReEnterPass" duration-ms="20581" started-at="2020-07-29T17:13:50 IST" finished-at="2020-07-29T17:14:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertReEnterPass -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:13:50 IST" finished-at="2020-07-29T17:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginPage status=SUCCESS method=ZigWheelsValidTest.LoginPage(java.lang.String)[pri:2, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="getResult" is-config="true" duration-ms="0" started-at="2020-07-29T17:14:10 IST" finished-at="2020-07-29T17:14:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assertReEnterPass status=SUCCESS method=ZigWheelsValidTest.assertReEnterPass()[pri:3, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zigwheels.test.ZigWheelsValidTest@52f27fbd]" name="tearDown" is-config="true" duration-ms="5396" started-at="2020-07-29T17:14:10 IST" finished-at="2020-07-29T17:14:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zigwheels.test.ZigWheelsValidTest -->
+    </test> <!-- Regression TestFirefox -->
+  </suite> <!-- ZigwheelsRegression -->
+</testng-results>

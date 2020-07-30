@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ZigwheelsRegression]">
+  <test thread-count="5" name="Regression TestFirefox(failed)">
+    <parameter name="browsername" value="mozilla"/>
+    <parameter name="portId" value="http://192.168.1.4:6970/wd/hub"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.zigwheels.test.ZigwheelsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="assertBug"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.zigwheels.test.ZigwheelsTest -->
+    </classes>
+  </test> <!-- Regression TestFirefox(failed) -->
+  <test thread-count="5" name="Regression TestChrome(failed)">
+    <parameter name="browsername" value="chrome"/>
+    <parameter name="portId" value="http://192.168.1.4:6969/wd/hub"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.zigwheels.test.ZigwheelsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="assertBug"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.zigwheels.test.ZigwheelsTest -->
+    </classes>
+  </test> <!-- Regression TestChrome(failed) -->
+  <test thread-count="5" name="Regression TestMsedge(failed)">
+    <parameter name="browsername" value="Edge"/>
+    <parameter name="portId" value="http://192.168.1.4:6971/wd/hub"/>
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.zigwheels.test.ZigwheelsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="assertBug"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.zigwheels.test.ZigwheelsTest -->
+    </classes>
+  </test> <!-- Regression TestMsedge(failed) -->
+</suite> <!-- Failed suite [ZigwheelsRegression] -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ZigwheelsSmoke">
+	<test thread-count="1" name="Smoke TestFirefox">
+		<parameter name="browsername" value="mozilla"></parameter>
+		<parameter name="portId"
+			value="http://192.168.1.4:6970/wd/hub"></parameter>
+		<parameter name="bikeExcelSheet" value="valid_products_mozilla"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.zigwheels.test.ZigwheelsTest"></class>
+		</classes>
+	</test>
+	<test thread-count="1" name="Smoke TestChrome">
+		<parameter name="browsername" value="chrome"></parameter>
+		<parameter name="portId"
+			value=" http://192.168.1.4:6969/wd/hub"></parameter>
+		<parameter name="bikeExcelSheet"
+			value="valid_products_chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.zigwheels.test.ZigwheelsTest"></class>
+		</classes>
+	</test>
+	<test thread-count="1" name="Smoke TestMsedge">
+		<parameter name="browsername" value="Edge"></parameter>
+		<parameter name="portId"
+			value="http://192.168.1.4:6971/wd/hub"></parameter>
+		<parameter name="bikeExcelSheet"
+			value="valid_products_msedge"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.zigwheels.test.ZigwheelsTest"></class>
+		</classes>
+	</test>
+</suite>

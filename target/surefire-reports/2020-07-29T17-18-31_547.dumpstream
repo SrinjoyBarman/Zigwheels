@@ -1,0 +1,4 @@
+# Created at 2020-07-29T17:18:32.142
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Eclispse_Srinjoy\ZigwheelsFinalTest\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

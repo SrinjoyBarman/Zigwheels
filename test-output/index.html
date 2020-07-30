@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-ZigwheelsRegression">
+              <span class="suite-name border-passed">ZigwheelsRegression</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-ZigwheelsRegression">
+                    <span>D:\Eclispse_Srinjoy\ZigwheelsFinalTest\Regression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-ZigwheelsRegression">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-ZigwheelsRegression">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-ZigwheelsRegression">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-ZigwheelsRegression">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-ZigwheelsRegression">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-ZigwheelsRegression">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ZigwheelsRegression" class="hide-methods passed suite-ZigwheelsRegression"> (hide)</a> <!-- hide-methods passed suite-ZigwheelsRegression -->
+                      <a href="#" panel-name="suite-ZigwheelsRegression" class="show-methods passed suite-ZigwheelsRegression"> (show)</a> <!-- show-methods passed suite-ZigwheelsRegression -->
+                    </span>
+                    <div class="method-list-content passed suite-ZigwheelsRegression">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigWheelsValidTest" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigWheelsValidTest" hash-for-method="LoginPage(readExcel)">LoginPage(readExcel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigwheelsTest" hash-for-method="LoginPage(readExcel)">LoginPage(readExcel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigwheelsTest" hash-for-method="assertBug">assertBug</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigwheelsTest" hash-for-method="assertCars">assertCars</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigWheelsValidTest" hash-for-method="assertReEnterPass">assertReEnterPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigwheelsTest" hash-for-method="getWebsite">getWebsite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigWheelsValidTest" hash-for-method="getWebsite">getWebsite</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigwheelsTest" hash-for-method="switchLogin">switchLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ZigwheelsRegression" title="com.zigwheels.test.ZigwheelsTest" hash-for-method="usedCars">usedCars</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ZigwheelsRegression -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ZigwheelsRegression" class="panel ZigwheelsRegression">
+          <div class="suite-ZigwheelsRegression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zigwheels.test.ZigWheelsValidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPage(readExcel)">
+                  </a> <!-- LoginPage(readExcel) -->
+                  <span class="method-name">LoginPage</span>
+                  <span class="parameters">(readExcel)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertReEnterPass">
+                  </a> <!-- assertReEnterPass -->
+                  <span class="method-name">assertReEnterPass</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWebsite">
+                  </a> <!-- getWebsite -->
+                  <span class="method-name">getWebsite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ZigwheelsRegression-class-passed -->
+          <div class="suite-ZigwheelsRegression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zigwheels.test.ZigwheelsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginPage(readExcel)">
+                  </a> <!-- LoginPage(readExcel) -->
+                  <span class="method-name">LoginPage</span>
+                  <span class="parameters">(readExcel)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertBug">
+                  </a> <!-- assertBug -->
+                  <span class="method-name">assertBug</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="assertCars">
+                  </a> <!-- assertCars -->
+                  <span class="method-name">assertCars</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWebsite">
+                  </a> <!-- getWebsite -->
+                  <span class="method-name">getWebsite</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="switchLogin">
+                  </a> <!-- switchLogin -->
+                  <span class="method-name">switchLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="usedCars">
+                  </a> <!-- usedCars -->
+                  <span class="method-name">usedCars</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ZigwheelsRegression-class-passed -->
+        </div> <!-- panel ZigwheelsRegression -->
+        <div panel-name="test-xml-ZigwheelsRegression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Eclispse_Srinjoy\ZigwheelsFinalTest\Regression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;ZigwheelsRegression&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Regression TestFirefox&quot;&gt;
+    &lt;parameter name=&quot;readData&quot; value=&quot;readExcel&quot;/&gt;
+    &lt;parameter name=&quot;browsername&quot; value=&quot;mozilla&quot;/&gt;
+    &lt;parameter name=&quot;portId&quot; value=&quot;http://192.168.1.4:6970/wd/hub&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Regression&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.zigwheels.test.ZigwheelsTest&quot;/&gt;
+      &lt;class name=&quot;com.zigwheels.test.ZigWheelsValidTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression TestFirefox --&gt;
+&lt;/suite&gt; &lt;!-- ZigwheelsRegression --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ZigwheelsRegression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ZigwheelsRegression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression TestFirefox (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ZigwheelsRegression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ZigwheelsRegression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">LoginPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">assertBug</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">assertCars</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">assertReEnterPass</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getWebsite</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">switchLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">usedCars</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getWebsite</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ZigwheelsRegression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ZigwheelsRegression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ZigwheelsRegression');
+function tableData_ZigwheelsRegression() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'assertBug')
+data.setCell(0, 2, 'com.zigwheels.test.ZigwheelsTest')
+data.setCell(0, 3, 29331);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'assertReEnterPass')
+data.setCell(1, 2, 'com.zigwheels.test.ZigWheelsValidTest')
+data.setCell(1, 3, 20581);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getWebsite')
+data.setCell(2, 2, 'com.zigwheels.test.ZigwheelsTest')
+data.setCell(2, 3, 10092);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getWebsite')
+data.setCell(3, 2, 'com.zigwheels.test.ZigWheelsValidTest')
+data.setCell(3, 3, 9533);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'usedCars')
+data.setCell(4, 2, 'com.zigwheels.test.ZigwheelsTest')
+data.setCell(4, 3, 6957);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'LoginPage')
+data.setCell(5, 2, 'com.zigwheels.test.ZigwheelsTest')
+data.setCell(5, 3, 5926);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginPage')
+data.setCell(6, 2, 'com.zigwheels.test.ZigWheelsValidTest')
+data.setCell(6, 3, 5831);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Login')
+data.setCell(7, 2, 'com.zigwheels.test.ZigWheelsValidTest')
+data.setCell(7, 3, 5105);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'switchLogin')
+data.setCell(8, 2, 'com.zigwheels.test.ZigwheelsTest')
+data.setCell(8, 3, 4198);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'assertCars')
+data.setCell(9, 2, 'com.zigwheels.test.ZigwheelsTest')
+data.setCell(9, 3, 47);
+window.suiteTableData['ZigwheelsRegression']= { tableData: data, tableDiv: 'times-div-ZigwheelsRegression'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-ZigwheelsRegression">
+              </div> <!-- times-div-ZigwheelsRegression -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ZigwheelsRegression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ZigwheelsRegression</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ZigwheelsRegression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zigwheels.test.ZigwheelsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">uiHandles</span>
+                <br/>
+                <span class="ignored-method-name">takeScreenshot</span>
+                <br/>
+                <span class="ignored-method-name">writeExcel</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ZigwheelsRegression" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zigwheels.test.ZigwheelsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(mozilla, http://192.168.1.4:6970/wd/hub)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getWebsite</span>
+                <span class="method-start">7316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=getWebsite status=SUCCESS method=ZigwheelsTest.getWebsite()[pri:0, instance:com.zig...)</span>
+                <span class="method-start">17408 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">usedCars</span>
+                <span class="method-start">17408 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=usedCars status=SUCCESS method=ZigwheelsTest.usedCars()[pri:4, instance:com.zigwhee...)</span>
+                <span class="method-start">24365 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">assertCars</span>
+                <span class="method-start">24365 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=assertCars status=SUCCESS method=ZigwheelsTest.assertCars()[pri:5, instance:com.zig...)</span>
+                <span class="method-start">24428 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">switchLogin</span>
+                <span class="method-start">24428 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=switchLogin status=SUCCESS method=ZigwheelsTest.switchLogin()[pri:6, instance:com.z...)</span>
+                <span class="method-start">28626 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">LoginPage(readExcel)</span>
+                <span class="method-start">28626 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=LoginPage status=SUCCESS method=ZigwheelsTest.LoginPage(java.lang.String)[pri:7, in...)</span>
+                <span class="method-start">34552 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">assertBug</span>
+                <span class="method-start">34552 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=assertBug status=SUCCESS method=ZigwheelsTest.assertBug()[pri:8, instance:com.zigwh...)</span>
+                <span class="method-start">63883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63899 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zigwheels.test.ZigWheelsValidTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(mozilla, http://192.168.1.4:6970/wd/hub)</span>
+                <span class="method-start">66720 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getWebsite</span>
+                <span class="method-start">72951 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=getWebsite status=SUCCESS method=ZigWheelsValidTest.getWebsite()[pri:0, instance:co...)</span>
+                <span class="method-start">82484 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">Login</span>
+                <span class="method-start">82484 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=Login status=SUCCESS method=ZigWheelsValidTest.Login()[pri:1, instance:com.zigwheel...)</span>
+                <span class="method-start">87589 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">LoginPage(readExcel)</span>
+                <span class="method-start">87589 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=LoginPage status=SUCCESS method=ZigWheelsValidTest.LoginPage(java.lang.String)[pri:...)</span>
+                <span class="method-start">93420 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">assertReEnterPass</span>
+                <span class="method-start">93420 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=assertReEnterPass status=SUCCESS method=ZigWheelsValidTest.assertReEnterPass()[pri:...)</span>
+                <span class="method-start">114001 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">114001 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,7 @@
+com\zigwheels\pages\ZigwheelsUsedCars.class
+com\zigwheels\base\ZigwheelsBase.class
+com\zigwheels\base\ZigwheelsSetup.class
+com\zigwheels\utils\ExcelUtilsZigwheels.class
+com\zigwheels\pages\ZigwheelsLogin.class
+com\zigwheels\utils\ExtentReportManager.class
+com\zigwheels\pages\ZigwheelsPageObject.class
