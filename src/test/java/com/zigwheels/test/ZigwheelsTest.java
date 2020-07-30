@@ -20,6 +20,14 @@ import com.zigwheels.pages.ZigwheelsLogin;
 import com.zigwheels.pages.ZigwheelsPageObject;
 import com.zigwheels.pages.ZigwheelsUsedCars;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
+
 public class ZigwheelsTest extends ZigwheelsBase {
 	
 	public static String browser;
@@ -41,14 +49,22 @@ public class ZigwheelsTest extends ZigwheelsBase {
 		invokeBrowser(browsername, portId);
 		browser= browsername;
 	}
-
+	
+	
 	// test to get respective URL
 	@Test(priority = 0, groups = { "Smoke", "Regression" })
 	public void getWebsite() {
 		getUrl("websiteUrl");
 	}
-
+	
+	
 	@Test(priority = 1, groups = { "Smoke" })
+	@Description("Verify navigation to [Upcoming Bikes] and select [Bike Manufacturer] in Zigwheels Application")
+	@Feature("Feature : Navigation & Category Selection")
+	@Epic("Bike_Search_02,03")
+	@Story("Story: Manufacturer Details")
+	@Step("Verify manufacturer details")
+	@Severity(SeverityLevel.CRITICAL)
 	public void uiHandles() throws InterruptedException {
 		// hovering and clicking on new bikes
 		
@@ -83,6 +99,12 @@ public class ZigwheelsTest extends ZigwheelsBase {
 	// accepting parameters of excel sheet from respective xml file.
 	@Parameters("bikeExcelSheet")
 	@Test(priority = 3, groups = { "Smoke" })
+	@Description("Verify details of [Upcoming Bikes]")
+	@Feature("Feature : Bikes Storage")
+	@Epic("Bike_Search_05")
+	@Story("Story: Upcoming Bike Details")
+	@Step("Verify availibility of bikes in the given range")
+	@Severity(SeverityLevel.CRITICAL)
 	public void writeExcel(String sheetname) {
 
 		// obtaining data from website of prices less then 4 lakh through method in base
@@ -105,6 +127,12 @@ public class ZigwheelsTest extends ZigwheelsBase {
 	}
 
 	@Test(priority = 2, groups = "Smoke")
+	@Description("Verify price range and take screenshot")
+	@Feature("Feature : Bike Range")
+	@Epic("Bike_Search_04")
+	@Story("Story: Bike Range Details")
+	@Step("Verify Upcoming Bike Range Details")
+	@Severity(SeverityLevel.NORMAL)
 	public void takeScreenshot() {
 		
 		logger1.log(Status.INFO, "Take screenshot of the upcoming bikes after clicking [read more]");
@@ -131,6 +159,12 @@ public class ZigwheelsTest extends ZigwheelsBase {
 	}
 
 	@Test(priority = 4, groups = "Regression")
+	@Description("Verify navigation to [Used Cars in Chennai] and select [Price Sorting Details]")
+	@Feature("Feature : Navigation")
+	@Epic("Car_Search_01")
+	@Story("Story: Price Sorting of [Used cars]")
+	@Step("Verify Price Sorting details of [Used Cars - Price: High to Low]")
+	@Severity(SeverityLevel.CRITICAL)
 	public void usedCars() {
 		// hover on used cars and click on used cars in chennai
 		
@@ -174,6 +208,11 @@ public class ZigwheelsTest extends ZigwheelsBase {
 	}
 
 	@Test(priority = 5, groups = "Regression")
+	@Description("Verify Price Availibility and Number of [Used Cars in Chennai]")
+	@Epic("Car_Search_01")
+	@Story("Story: Availibility of [Used Cars]")
+	@Step("Verify number of [Used Cars] is less than 1,000")
+	@Severity(SeverityLevel.CRITICAL)
 	public void assertCars() {
 		// getting all list of items in used cars in chennai sorted by Price:High to Low
 		List<WebElement> list = getTopUsedCars(ZigwheelsUsedCars.carName);
@@ -186,9 +225,15 @@ public class ZigwheelsTest extends ZigwheelsBase {
 		
 		logger1.log(Status.PASS, "Assert whether title matches [Used Cars in Chennai] as well as there are less than 1000 cars");
 	}
-
+	
+	
 	@Test(priority = 6, groups = "Regression")
-	public void switchLogin() {
+	@Description("Verify Invalid Login Functionality of [Zigwheels Application]")
+	@Epic("Zigw_01")
+	@Story("Story: Invalid Login Functionaliy")
+	@Step("Verify Invalid Login Functionality of the application")
+	@Severity(SeverityLevel.CRITICAL)
+	public void switchLogin() throws InterruptedException {
 		
 		logger1= logger.createNode("Invalid Login Test");
 		// get back to home page window
@@ -209,6 +254,7 @@ public class ZigwheelsTest extends ZigwheelsBase {
 		
 		logger1.log(Status.INFO, "Click on [Continue through Facebook]");
 		
+		Thread.sleep(1000);
 		// navigate to new login window
 		windowHandlesSet();
 		driver.manage().window().maximize();
@@ -217,6 +263,11 @@ public class ZigwheelsTest extends ZigwheelsBase {
 	
 	@Parameters("readData")
 	@Test(priority = 7, groups = "Regression")
+	@Description("Pass invalid details in login")
+	@Epic("Zigw_01")
+	@Story("Story: Invalid Login Functionaliy")
+	@Step("Verify Invalid Login Functionality of the application")
+	@Severity(SeverityLevel.BLOCKER)
 	public void LoginPage(String sheetname) {
 		// send username and password passed through values from .properties file and
 		// click on log in button
@@ -232,6 +283,11 @@ public class ZigwheelsTest extends ZigwheelsBase {
 	}
 
 	@Test(priority = 8, groups = "Regression")
+	@Description("Verify Invalid Login credentials provide invalid message")
+	@Epic("Zigw_01")
+	@Story("Story: Invalid Login Functionaliy")
+	@Step("Verify Invalid Login Functionality of the application")
+	@Severity(SeverityLevel.CRITICAL)
 	public void assertBug() {
 		// Asserting the displayed text is "Sorry, something went wrong."
 		
