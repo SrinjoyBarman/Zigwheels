@@ -16,6 +16,14 @@ import com.aventstack.extentreports.Status;
 import com.zigwheels.base.ZigwheelsBase;
 import com.zigwheels.pages.ZigwheelsLogin;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
+
 public class ZigWheelsValidTest extends ZigwheelsBase {
 	public static String browser;
 	// constructor
@@ -44,7 +52,13 @@ public class ZigWheelsValidTest extends ZigwheelsBase {
 	}
 
 	@Test(priority = 1, groups = "Regression")
-	public void Login() {
+	@Description("Verify Valid Login Functionality of [Zigwheels Application]")
+	@Feature("Feature : Navigation")
+	@Epic("Zigw_01")
+	@Story("Story: Valid Login Functionaliy")
+	@Step("Verify Valid Login Functionality of the application")
+	@Severity(SeverityLevel.BLOCKER)
+	public void Login() throws InterruptedException {
 		// click on login icon
 		
 		if(browser.equalsIgnoreCase("mozilla"))
@@ -75,6 +89,8 @@ public class ZigWheelsValidTest extends ZigwheelsBase {
 		
 		logger1.log(Status.INFO, "Click on [Continue with Facebook]");
 		
+		Thread.sleep(1000);
+		
 		WindowHandle(1);
 		driver.manage().window().maximize();
 
@@ -82,6 +98,11 @@ public class ZigWheelsValidTest extends ZigwheelsBase {
 	
 	@Parameters("readData")
 	@Test(priority = 2, groups = "Regression")
+	@Description("Pass Valid details in login")
+	@Epic("Zigw_01")
+	@Story("Story: Valid Login Functionaliy")
+	@Step("Verify Valid Login Functionality of the application")
+	@Severity(SeverityLevel.BLOCKER)
 	public void LoginPage(String sheetname) {
 		// send username and password passed through values from .properties file and
 		// click on log in button
@@ -97,6 +118,11 @@ public class ZigWheelsValidTest extends ZigwheelsBase {
 	}
 
 	@Test(priority = 3, groups = "Regression")
+	@Description("Verify Valid Login credentials provide Valid message")
+	@Epic("Zigw_01")
+	@Story("Story: Valid Login Functionaliy")
+	@Step("Verify Valid Login Functionality of the application")
+	@Severity(SeverityLevel.CRITICAL)
 	public void assertReEnterPass() {
 
 		// Asserting the displayed text is "Please re-enter your password"
