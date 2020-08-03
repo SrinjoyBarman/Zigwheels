@@ -203,7 +203,11 @@ public class ZigwheelsTest extends ZigwheelsBase {
 		// .properties file
 		ExplicitWait(ZigwheelsUsedCars.sortUsedCars);
 		selectManufacturer(ZigwheelsUsedCars.sortUsedCars, "sortby");
-		Thread.sleep(2000);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		logger1.log(Status.INFO,"Sort by [Price : High to Low]");
 	}
 
